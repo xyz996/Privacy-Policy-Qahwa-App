@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية - قهوة | Privacy Policy - Qahwa</title>
+    <style>
+        :root {
+            --primary-color: #8B4513;
+            --bg-color: #FFF8F0;
+            --text-color: #333;
+            --border-color: #D4A574;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        .logo p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .lang-switch {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .lang-switch button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 0 5px;
+            transition: opacity 0.3s;
+        }
+
+        .lang-switch button:hover {
+            opacity: 0.9;
+        }
+
+        .lang-switch button.active {
+            background: var(--border-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        h3 {
+            color: var(--primary-color);
+            margin: 20px 0 10px;
+        }
+
+        p, li {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+
+        .update-date {
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .contact-box {
+            background: var(--bg-color);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .contact-box a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            .logo h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>☕ قهوة - Qahwa</h1>
+            <p>سياسة الخصوصية | Privacy Policy</p>
+        </div>
+
+        <div class="lang-switch">
+            <button id="btn-ar" class="active" onclick="showLang('ar')">العربية</button>
+            <button id="btn-en" onclick="showLang('en')">English</button>
+        </div>
+
+        <!-- Arabic Content -->
+        <div id="content-ar" class="section active">
+            <h2>مقدمة</h2>
+            <p>مرحباً بكم في تطبيق قهوة. نحن نحترم خصوصيتكم ونلتزم بحماية بياناتكم الشخصية. توضح سياسة الخصوصية هذه كيفية جمع واستخدام وحماية معلوماتكم عند استخدام تطبيقنا.</p>
+
+            <h2>المعلومات التي نجمعها</h2>
+
+            <h3>١. معلومات الحساب</h3>
+            <ul>
+                <li><strong>رقم الهاتف:</strong> نستخدمه للتحقق من هويتكم وإنشاء حسابكم</li>
+                <li><strong>الاسم:</strong> (اختياري) لتخصيص تجربتكم</li>
+            </ul>
+
+            <h3>٢. معلومات الموقع</h3>
+            <ul>
+                <li><strong>عنوان التوصيل:</strong> لتوصيل طلباتكم بدقة</li>
+                <li><strong>الموقع الجغرافي:</strong> لتحديد موقع التوصيل على الخريطة</li>
+            </ul>
+
+            <h3>٣. معلومات الطلبات</h3>
+            <ul>
+                <li>تفاصيل الطلبات السابقة</li>
+                <li>تاريخ ووقت الطلب</li>
+                <li>المنتجات المطلوبة والكميات</li>
+            </ul>
+
+            <h3>٤. معلومات الجهاز</h3>
+            <ul>
+                <li>نوع الجهاز ونظام التشغيل</li>
+                <li>رمز الإشعارات (FCM Token) لإرسال تحديثات الطلب</li>
+            </ul>
+
+            <h2>كيف نستخدم معلوماتكم</h2>
+            <ul>
+                <li>معالجة وتوصيل طلباتكم</li>
+                <li>إرسال إشعارات حول حالة الطلب</li>
+                <li>التواصل معكم بخصوص طلباتكم</li>
+                <li>تحسين خدماتنا وتجربة المستخدم</li>
+                <li>الامتثال للمتطلبات القانونية</li>
+            </ul>
+
+            <h2>مشاركة المعلومات</h2>
+            <p>نحن لا نبيع أو نؤجر معلوماتكم الشخصية لأي طرف ثالث. قد نشارك معلوماتكم فقط في الحالات التالية:</p>
+            <ul>
+                <li><strong>فريق التوصيل:</strong> عنوانكم ورقم هاتفكم لتوصيل الطلب</li>
+                <li><strong>مزودي الخدمات:</strong> مثل Firebase (Google) لتخزين البيانات والإشعارات</li>
+                <li><strong>المتطلبات القانونية:</strong> عند الضرورة للامتثال للقانون</li>
+            </ul>
+
+            <h2>أمان البيانات</h2>
+            <p>نستخدم تقنيات أمان متقدمة لحماية بياناتكم:</p>
+            <ul>
+                <li>تشفير البيانات أثناء النقل (SSL/TLS)</li>
+                <li>تخزين آمن على خوادم Firebase</li>
+                <li>التحقق من الهوية عبر رمز SMS</li>
+                <li>صلاحيات وصول محدودة للموظفين</li>
+            </ul>
+
+            <h2>حقوقكم</h2>
+            <p>لديكم الحق في:</p>
+            <ul>
+                <li>الوصول إلى بياناتكم الشخصية</li>
+                <li>تصحيح أي معلومات غير دقيقة</li>
+                <li>طلب حذف حسابكم وبياناتكم</li>
+                <li>الانسحاب من الإشعارات التسويقية</li>
+            </ul>
+
+            <h2>الاحتفاظ بالبيانات</h2>
+            <p>نحتفظ ببياناتكم طالما حسابكم نشط أو حسب الحاجة لتقديم خدماتنا. يمكنكم طلب حذف حسابكم في أي وقت.</p>
+
+            <h2>التغييرات على هذه السياسة</h2>
+            <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. سنقوم بإعلامكم بأي تغييرات جوهرية عبر التطبيق أو البريد الإلكتروني.</p>
+
+            <h2>تواصلوا معنا</h2>
+            <div class="contact-box">
+                <p>إذا كان لديكم أي أسئلة حول سياسة الخصوصية، يرجى التواصل معنا:</p>
+                <p>📧 البريد الإلكتروني: <a href="mailto:support@qahwa.jo">support@qahwa.jo</a></p>
+                <p>📱 الهاتف: <a href="tel:+962790070862">+962 79 007 0862</a></p>
+                <p>📍 الموقع: إربد، الأردن</p>
+            </div>
+        </div>
+
+        <!-- English Content -->
+        <div id="content-en" class="section">
+            <h2>Introduction</h2>
+            <p>Welcome to Qahwa app. We respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and protect your information when you use our app.</p>
+
+            <h2>Information We Collect</h2>
+
+            <h3>1. Account Information</h3>
+            <ul>
+                <li><strong>Phone Number:</strong> Used to verify your identity and create your account</li>
+                <li><strong>Name:</strong> (Optional) To personalize your experience</li>
+            </ul>
+
+            <h3>2. Location Information</h3>
+            <ul>
+                <li><strong>Delivery Address:</strong> To deliver your orders accurately</li>
+                <li><strong>Geographic Location:</strong> To pinpoint delivery location on map</li>
+            </ul>
+
+            <h3>3. Order Information</h3>
+            <ul>
+                <li>Previous order details</li>
+                <li>Order date and time</li>
+                <li>Products ordered and quantities</li>
+            </ul>
+
+            <h3>4. Device Information</h3>
+            <ul>
+                <li>Device type and operating system</li>
+                <li>Push notification token (FCM Token) for order updates</li>
+            </ul>
+
+            <h2>How We Use Your Information</h2>
+            <ul>
+                <li>Process and deliver your orders</li>
+                <li>Send notifications about order status</li>
+                <li>Communicate with you regarding your orders</li>
+                <li>Improve our services and user experience</li>
+                <li>Comply with legal requirements</li>
+            </ul>
+
+            <h2>Information Sharing</h2>
+            <p>We do not sell or rent your personal information to any third party. We may share your information only in the following cases:</p>
+            <ul>
+                <li><strong>Delivery Team:</strong> Your address and phone number for order delivery</li>
+                <li><strong>Service Providers:</strong> Such as Firebase (Google) for data storage and notifications</li>
+                <li><strong>Legal Requirements:</strong> When necessary to comply with the law</li>
+            </ul>
+
+            <h2>Data Security</h2>
+            <p>We use advanced security technologies to protect your data:</p>
+            <ul>
+                <li>Data encryption in transit (SSL/TLS)</li>
+                <li>Secure storage on Firebase servers</li>
+                <li>Identity verification via SMS code</li>
+                <li>Limited access permissions for employees</li>
+            </ul>
+
+            <h2>Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access your personal data</li>
+                <li>Correct any inaccurate information</li>
+                <li>Request deletion of your account and data</li>
+                <li>Opt out of marketing notifications</li>
+            </ul>
+
+            <h2>Data Retention</h2>
+            <p>We retain your data as long as your account is active or as needed to provide our services. You can request account deletion at any time.</p>
+
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any material changes through the app or email.</p>
+
+            <h2>Contact Us</h2>
+            <div class="contact-box">
+                <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                <p>📧 Email: <a href="mailto:support@qahwa.jo">support@qahwa.jo</a></p>
+                <p>📱 Phone: <a href="tel:+962790070862">+962 79 007 0862</a></p>
+                <p>📍 Location: Irbid, Jordan</p>
+            </div>
+        </div>
+
+        <p class="update-date">
+            آخر تحديث: ٤ يناير ٢٠٢٦ | Last Updated: January 4, 2026
+        </p>
+    </div>
+
+    <script>
+        function showLang(lang) {
+            document.querySelectorAll('.section').forEach(el => el.classList.remove('active'));
+            document.getElementById('content-' + lang).classList.add('active');
+            document.getElementById('btn-ar').classList.remove('active');
+            document.getElementById('btn-en').classList.remove('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+            if (lang === 'ar') {
+                document.documentElement.setAttribute('dir', 'rtl');
+                document.documentElement.setAttribute('lang', 'ar');
+            } else {
+                document.documentElement.setAttribute('dir', 'ltr');
+                document.documentElement.setAttribute('lang', 'en');
+            }
+        }
+    </script>
+</body>
+</html>
+
